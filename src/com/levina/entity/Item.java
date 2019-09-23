@@ -1,13 +1,11 @@
 package com.levina.entity;
 
 
-import java.time.LocalDate;
-
 public class Item {
     private int id;
     private String name;
     private Category category;
-    private LocalDate date;
+    private String date;
 
     public int getId() {
         return id;
@@ -33,11 +31,11 @@ public class Item {
         this.category = category;
     }
 
-    public LocalDate getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

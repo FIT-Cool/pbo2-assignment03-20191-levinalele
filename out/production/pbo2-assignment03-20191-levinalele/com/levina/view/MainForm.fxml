@@ -14,8 +14,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Show Category Management" />
-              <MenuItem mnemonicParsing="false" text="Close">
+                  <MenuItem mnemonicParsing="false" onAction="#ShowCategoryAction" text="Show Category Management" />
+              <MenuItem mnemonicParsing="false" onAction="#closeAction" text="Close">
                      <accelerator>
                         <KeyCodeCombination alt="DOWN" code="X" control="UP" meta="UP" shift="DOWN" shortcut="UP" />
                      </accelerator></MenuItem>
@@ -104,7 +104,7 @@
                   <Insets />
                </VBox.margin>
             </GridPane>
-            <TableView fx:id="tableItem" prefHeight="231.0" prefWidth="600.0" tableMenuButtonVisible="true">
+            <TableView fx:id="tableItem" onMouseClicked="#tableClick" prefHeight="231.0" prefWidth="600.0" tableMenuButtonVisible="true">
               <columns>
                 <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
                 <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
